@@ -1,28 +1,12 @@
 
 
-python -m venv .venv
+# สร้าง virtual environment ที่ home/deploy ไปเลยใช้ร่วมกันได้
+python3 -m venv ~/ansible-venv
 
+# เปิดใช้งาน virtual environment
+source ~/ansible-venv/bin/activate
 
-GitBash
-
-windows
-source .venv/Scripts/activate
-
-linux
-source .venv/bin/activate
-
-
-
-Windows Command
-.\.venv\Scripts\activate.bat
-
-
-Powershell
-.\.venv\Scripts\Activate.ps1
-
-
---------------------------
-
+# อัพเกรด pip
 pip install --upgrade pip
 
 # ติดตั้ง Ansible เวอร์ชันเสถียร
